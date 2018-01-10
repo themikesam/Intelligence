@@ -1,4 +1,4 @@
-// ¶]ºtºâªk
+//GAæ¼”ç®—ï¼Œæ‰“äº‚
 public class GA {
 
     /* GA parameters */
