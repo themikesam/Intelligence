@@ -1,4 +1,4 @@
-// ¬ö¿ı­Ô¿ï¸ô®|¶O¬¥»X
+// æ¯é«”
 public class Population {
 
     // Holds population of tours
