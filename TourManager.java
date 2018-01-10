@@ -10,6 +10,10 @@ public class TourManager {
         destinationCities.add(city);
     }
 
+    public static void removeCity(City city) {
+        destinationCities.remove(city);
+    }
+
     // Get a city
     public static City getCity(int index){
         return (City)destinationCities.get(index);

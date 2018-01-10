@@ -5,10 +5,7 @@ public class TSP_GA {
         // Create and add our cities
         String str;
         Scanner input = new Scanner(System.in);
-        System.out.println("Please Enter Ur Identity: ");
-        System.out.println("(Old/Pregnant/Children/Normal)");
-        str = input.next();
-        
+
         City city = new City("C1", 60, 200);
         TourManager.addCity(city);
         City city2 = new City("C2", 180, 200);
@@ -50,6 +47,23 @@ public class TSP_GA {
         City city20 = new City("C20", 160, 20);
         TourManager.addCity(city20);
 
+        System.out.println("(Old/Pregnant/Children/Normal)");
+        System.out.println("Please Enter Ur Identity: ");
+        str = input.next();
+        if (str.equals("Old")) {
+            TourManager.removeCity(city);
+            TourManager.removeCity(city2);
+            TourManager.removeCity(city3);
+        } else if (str.equals("Pregnant")) {
+            TourManager.removeCity(city4);
+            TourManager.removeCity(city5);
+            TourManager.removeCity(city6);
+        } else if (str.equals("Children")) {
+            TourManager.removeCity(city7);
+            TourManager.removeCity(city8);
+            TourManager.removeCity(city9);
+        }
+        
         // Initialize population
         Population pop = new Population(50, true);
         System.out.println("Initial distance: " + pop.getFittest().getDistance());
