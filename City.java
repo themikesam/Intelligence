@@ -1,10 +1,10 @@
-// ªì©l¤Æ°ò¥»¦ì¸m
+// åˆå§‹åŒ–åŸºæœ¬ä½ç½®
 public class City {
-    int x; // x®y¼Ğ
-    int y; // y®y¼Ğ
+    int x; // xåº§æ¨™
+    int y; // yåº§æ¨™
     String cityName;
 
-    // Constructs a randomly placed city ¦pªG¨S¦³¹w³]®y¼Ğ¡A¨ú¶Ã¼Æ
+    // Constructs a randomly placed city å¦‚æœæ²’æœ‰é è¨­åº§æ¨™ï¼Œå–äº‚æ•¸
     public City(){
         this.x = (int)(Math.random()*200);
         this.y = (int)(Math.random()*200);
@@ -32,7 +32,7 @@ public class City {
         return this.y;
     }
 
-    // Gets the distance to given city ¨ú±o¶ZÂ÷
+    // Gets the distance to given city å–å¾—è·é›¢
     public double distanceTo(City city){
         int xDistance = Math.abs(getX() - city.getX());
         int yDistance = Math.abs(getY() - city.getY());
