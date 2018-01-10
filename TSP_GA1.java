@@ -32,7 +32,7 @@ public class TSP_GA1 {
         System.out.println("(Old/Pregnant/Children/Normal)");
         System.out.println("Please Enter Ur Identity: ");
         str = input.next();
-        int[] Old = {2,3,4,5,7,8,9,13,14,15,17,23,25,28,30,34; 
+        int[] Old = {2,3,4,5,7,8,9,13,14,15,17,23,25,28,30,34}; 
         int[] Pregnant = {2,3,4,5,7,8,9,13,14,15,17,20,21,23,25,28,30,31,33,34}; 
         int[] Children = {5,7,9,10,12,13,14,15,23,30}; 
         if (str.equals("Old")) {
