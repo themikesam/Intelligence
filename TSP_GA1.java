@@ -52,7 +52,10 @@ public class TSP_GA1 {
         
         // Initialize population
         Population pop = new Population(50, true);
-        System.out.println("Initial distance: " + pop.getFittest().getDistance());
+        System.out.println("Initial:");
+        System.out.println("Distance: " + pop.getFittest().getDistance());
+        System.out.println("Path: ");
+        System.out.println(pop.getFittest());
 
         // Evolve population for 100 generations
         pop = GA.evolvePopulation(pop);
@@ -61,10 +64,11 @@ public class TSP_GA1 {
         }
 
         // Print final results
-        System.out.println("Finished");
-        System.out.println("Final distance: " + pop.getFittest().getDistance());
-        System.out.println("Solution:");
-        System.out.print(pop.getFittest());
+        System.out.println("\n\nEvolution Finished\n\n");
+        System.out.println("Final");
+        System.out.println("Distance: " + pop.getFittest().getDistance());
+        System.out.println("Path:");
+        System.out.println(pop.getFittest());
     }
 }
 
