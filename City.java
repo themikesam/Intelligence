@@ -1,4 +1,6 @@
 // 初始化基本位置
+import java.lang.*;
+
 public class City {
     int x; // x座標
     int y; // y座標
@@ -11,10 +13,18 @@ public class City {
     }
 
     // Constructs a city at chosen x, y location
-    public City(String cityName, int x, int y){
-        this.cityName = cityName;
-        this.x = x;
-        this.y = y;
+    // public City(String cityName, int x, int y){
+    //     this.cityName = cityName;
+    //     this.x = x;
+    //     this.y = y;
+    // }
+
+    // Constructs a city with reader, read in string and split by ','
+    public City(String text){
+        String[] value = text.split(",");
+        this.cityName = value[0];
+        this.x = Integer.parseInt(value[1]);
+        this.y = Integer.parseInt(value[2]);
     }
 
     // Gets city's name
