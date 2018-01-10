@@ -5,7 +5,7 @@ public class TSP_GA {
         // Create and add our cities
         String str;
         Scanner input = new Scanner(System.in);
-
+        
         City city = new City("C1", 60, 200);
         TourManager.addCity(city);
         City city2 = new City("C2", 180, 200);
