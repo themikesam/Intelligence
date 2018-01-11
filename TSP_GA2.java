@@ -9,6 +9,11 @@ import java.awt.Polygon;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
+/* Reference
+ * Java Programming Tutorial：https://www.ntu.edu.sg/home/ehchua/programming/java/J4a_GUI_2.html
+ * Drawing a Polygon by JAVA : https://stackoverflow.com/questions/15188238/about-drawing-a-polygon-in-java
+ * Make a Copy of Array : https://stackoverflow.com/questions/5785745/make-copy-of-array-java
+ */
 
 public class TSP_GA2 {
 
