@@ -1,4 +1,3 @@
-//GA演算，打亂
 public class GA {
 
     /* GA parameters */

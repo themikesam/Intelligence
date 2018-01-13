@@ -1,4 +1,3 @@
-// 母體
 public class Population {
 
     // Holds population of tours

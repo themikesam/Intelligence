@@ -14,6 +14,10 @@ public class TourManager {
         destinationCities.remove(city);
     }
 
+    public static int getSize() {
+        return destinationCities.size();
+    }
+
     // Get a city
     public static City getCity(int index){
         return (City)destinationCities.get(index);

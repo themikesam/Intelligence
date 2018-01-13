@@ -1,12 +1,11 @@
-// 初始化基本位置
 import java.lang.*;
 
 public class City {
-    int x; // x座標
-    int y; // y座標
+    int x;
+    int y;
     String cityName;
 
-    // Constructs a randomly placed city 如果沒有預設座標，取亂數
+    // Constructs a randomly placed city
     public City(){
         this.x = (int)(Math.random()*200);
         this.y = (int)(Math.random()*200);
@@ -42,7 +41,7 @@ public class City {
         return this.y;
     }
 
-    // Gets the distance to given city 取得距離
+    // Gets the distance to given city
     public double distanceTo(City city){
         int xDistance = Math.abs(getX() - city.getX());
         int yDistance = Math.abs(getY() - city.getY());
