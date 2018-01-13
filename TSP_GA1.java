@@ -41,11 +41,11 @@ public class TSP_GA1 {
             }
         } 
         else if (str.equals("Pregnant")) {
-            for(int k=0;k<Old.length;k++){
+            for(int k=0;k<Pregnant.length;k++){
                 TourManager.removeCity(city[Pregnant[k]-1]);
             }
         } else if (str.equals("Children")) {
-            for(int k=0;k<Old.length;k++){
+            for(int k=0;k<Children.length;k++){
                 TourManager.removeCity(city[Children[k]-1]);
             }
         }
