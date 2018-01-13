@@ -39,15 +39,20 @@ public class TSP_GA1 {
             for(int k=0;k<Old.length;k++){
                 TourManager.removeCity(city[Old[k]-1]);
             }
+            System.out.println(city.length-Old.length);
         } 
         else if (str.equals("Pregnant")) {
             for(int k=0;k<Pregnant.length;k++){
                 TourManager.removeCity(city[Pregnant[k]-1]);
             }
+            System.out.println(city.length-Pregnant.length);
         } else if (str.equals("Children")) {
             for(int k=0;k<Children.length;k++){
                 TourManager.removeCity(city[Children[k]-1]);
             }
+            System.out.println(city.length-Children.length);
+        } else {
+            System.out.println(city.length);
         }
         
         // Initialize population
