@@ -24,12 +24,12 @@ public class TSP_GA3 extends JFrame {
         mainMap = new JFrame();
         mainMap.setResizable(false);
         mainMap.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        poly = new Polygon(xPoly, yPoly, xPoly.length);
+        poly = new Polygon(xPoly, yPoly, TourManager.getSize());
         JPanel p = new JPanel() {
             @Override
             protected void paintComponent(Graphics g) {
                 try {
-                    image = ImageIO.read(new File("lulu.png"));
+                    image = ImageIO.read(new File("lulu.jpg"));
                 } catch (IOException e) {
                      e.printStackTrace();
                 }
@@ -44,15 +44,9 @@ public class TSP_GA3 extends JFrame {
                 return new Dimension(800, 600);
             }
         };
-        // try {
-        //     mainMap.setContentPane(new JLabel(new ImageIcon(ImageIO.read(new File("lulu.png")))));
-        // } catch (IOException e) {
-        //     e.printStackTrace();
-        // }
         mainMap.add(p);
         mainMap.pack();
         mainMap.setVisible(true);
-
     }
 
     /**
@@ -104,8 +98,8 @@ public class TSP_GA3 extends JFrame {
 
         System.out.println(TourManager.getSize());
         for(int k = 0; k < TourManager.getSize(); k++){
-            xPoly[k] = city[k].getX()*8;
-            yPoly[k] = city[k].getY()*8;
+            xPoly[k] = (int)(city[k].getX() * 8.25 - 20);
+            yPoly[k] = (int)(city[k].getY() * 8.2 + 140);
         }
 
         // Initialize population
