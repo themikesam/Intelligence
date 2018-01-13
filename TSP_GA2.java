@@ -24,8 +24,8 @@ public class TSP_GA2 {
         initComponents();
 
     }
-static int xPoly[] = new int [50];
-       static int yPoly[] = new int [50];
+    static int xPoly[] = new int [50];
+    static int yPoly[] = new int [50];
     public void initComponents() {
 
         mainMap = new JFrame();
