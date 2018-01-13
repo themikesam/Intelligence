@@ -3,8 +3,8 @@ Project of Intelligence NCNU 1061
 
 ***
 
-## 簍衡猭把σㄓ方
-    [the Project Spot](http://www.theprojectspot.com/tutorial-post/applying-a-genetic-algorithm-to-the-travelling-salesman-problem/5)
+## 簍衡猭把σㄓ方:
+[the Project Spot](http://www.theprojectspot.com/tutorial-post/applying-a-genetic-algorithm-to-the-travelling-salesman-problem/5)
 
 ## 程穝セ
     Java -> TSP_GA3.java
