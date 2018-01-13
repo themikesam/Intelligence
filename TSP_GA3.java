@@ -10,10 +10,10 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
-public class TSP_GA2 {
+public class TSP_GA3 {
     public JFrame mainMap;
     public Polygon poly;
-    public TSP_GA2() {
+    public TSP_GA3() {
         initComponents();
     }
     static int xPoly[] = new int [50];
@@ -118,7 +118,7 @@ public class TSP_GA2 {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                new TSP_GA2();
+                new TSP_GA3();
             }
         });
     }
