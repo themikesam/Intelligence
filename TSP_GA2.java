@@ -20,9 +20,7 @@ public class TSP_GA2 {
     public JFrame mainMap;
     public Polygon poly;
     public TSP_GA2() {
-
         initComponents();
-
     }
     static int xPoly[] = new int [50];
     static int yPoly[] = new int [50];
@@ -32,12 +30,6 @@ public class TSP_GA2 {
         mainMap.setResizable(false);
 
         mainMap.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-
-        
-        // {150, 250, 325, 375, 450, 275, 100};
-        
-        // {150, 100, 125, 225, 250, 375, 300};
-
         poly = new Polygon(xPoly, yPoly, xPoly.length);
         JPanel p = new JPanel() {
             @Override
@@ -105,11 +97,11 @@ public class TSP_GA2 {
             }
         } 
         else if (str.equals("Pregnant")) {
-            for(int k=0;k<Old.length;k++){
+            for(int k=0;k<Pregnant.length;k++){
                 TourManager.removeCity(city[Pregnant[k]-1]);
             }
         } else if (str.equals("Children")) {
-            for(int k=0;k<Old.length;k++){
+            for(int k=0;k<Children.length;k++){
                 TourManager.removeCity(city[Children[k]-1]);
             }
         }
