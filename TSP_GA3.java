@@ -1,16 +1,17 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.*;
+import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
 import java.util.Scanner;
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.Graphics;
-import java.awt.Polygon;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import javax.swing.*;
+import java.awt.event.*;
 import javax.swing.SwingUtilities;
 
-public class TSP_GA3 {
+public class TSP_GA3 extends JFrame {
     public JFrame mainMap;
     public Polygon poly;
     public TSP_GA3() {
@@ -18,7 +19,7 @@ public class TSP_GA3 {
     }
     static int xPoly[] = new int [50];
     static int yPoly[] = new int [50];
-
+    public Image image;
     public void initComponents() {
         mainMap = new JFrame();
         mainMap.setResizable(false);
@@ -27,7 +28,13 @@ public class TSP_GA3 {
         JPanel p = new JPanel() {
             @Override
             protected void paintComponent(Graphics g) {
+                try {
+                    image = ImageIO.read(new File("lulu.png"));
+                } catch (IOException e) {
+                     e.printStackTrace();
+                }
                 super.paintComponent(g);
+                g.drawImage(image, 0, 0, 800, 600, null);
                 g.setColor(Color.BLUE);
                 g.drawPolygon(poly);
             }
@@ -37,6 +44,11 @@ public class TSP_GA3 {
                 return new Dimension(800, 600);
             }
         };
+        // try {
+        //     mainMap.setContentPane(new JLabel(new ImageIcon(ImageIO.read(new File("lulu.png")))));
+        // } catch (IOException e) {
+        //     e.printStackTrace();
+        // }
         mainMap.add(p);
         mainMap.pack();
         mainMap.setVisible(true);
@@ -92,8 +104,8 @@ public class TSP_GA3 {
 
         System.out.println(TourManager.getSize());
         for(int k = 0; k < TourManager.getSize(); k++){
-            xPoly[k] = city[k].getX()*7;
-            yPoly[k] = city[k].getY()*7;
+            xPoly[k] = city[k].getX()*8;
+            yPoly[k] = city[k].getY()*8;
         }
 
         // Initialize population
