@@ -64,7 +64,6 @@ public class TSP_GA3 extends JFrame {
             } else if(line.contains("\n") || line.contains("\r\n")) {
                 break;
             }
-            String[] parts = line.split(",");
             city[i] = new City(line);
             TourManager.addCity(city[i]);
             i++;
@@ -115,7 +114,39 @@ public class TSP_GA3 extends JFrame {
         System.out.println("Final");
         System.out.println("Distance: " + pop.getFittest().getDistance());
         System.out.println("Path:");
+        // System.out.println(pop.getFittest());
         System.out.println(pop.getFittest());
+        PrintWriter writer = new PrintWriter("result.txt", "UTF-8");
+        writer.println(pop.getFittest());
+        writer.close();
+        BufferedReader reader1 = new BufferedReader(new FileReader(("result.txt")));
+        // Read lines from file.
+        int l = 0;
+        String[] name = new String [100];
+        String[] x = new String [100];
+        String[] y = new String [100];
+        while (l!=TourManager.getSize()) {
+            String line_result = reader1.readLine();
+            if (line_result == null) {
+                break;
+            } else if(line_result.contains("\n") || line_result.contains("\r\n")) {
+                break;
+            }
+            String[] value = line_result.split(",");
+            // System.out.println(l+":"+value.length);
+            name[l] = value[0];
+            x[l] = value[1];
+            y[l] = value[2];
+            l++;
+        }
+        reader1.close();
+        for(int k = 0;k<TourManager.getSize();k++){
+            System.out.print(name[k].substring(1));
+            System.out.print(x[k]);
+            System.out.print(y[k].substring(0, y[k].length() - 1));
+            System.out.println();
+        }
+
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
