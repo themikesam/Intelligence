@@ -52,6 +52,6 @@ public class City {
 
     @Override
     public String toString(){
-        return getName() + "," + getX() + ", " + getY();
+        return getName() + "," + getX() + "," + getY();
     }
 }
