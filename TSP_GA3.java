@@ -9,17 +9,21 @@ import javax.swing.SwingUtilities;
 public class TSP_GA3 extends JFrame {
     public JFrame mainMap;
     public Polygon poly;
+    public Polygon poly2;
     public TSP_GA3() {
         initComponents();
     }
     static int xPoly[] = new int [50];
     static int yPoly[] = new int [50];
+    static int x2Poly[] = new int [50];
+    static int y2Poly[] = new int [50];
     public Image image;
     public void initComponents() {
         mainMap = new JFrame();
         mainMap.setResizable(false);
         mainMap.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         poly = new Polygon(xPoly, yPoly, TourManager.getSize());
+        poly2 = new Polygon(x2Poly, y2Poly, TourManager.getSize());
         JPanel p = new JPanel() {
             @Override
             protected void paintComponent(Graphics g) {
@@ -32,6 +36,8 @@ public class TSP_GA3 extends JFrame {
                 g.drawImage(image, 0, 0, 800, 600, null);
                 g.setColor(Color.BLUE);
                 g.drawPolygon(poly);
+                g.setColor(Color.RED);
+                g.drawPolygon(poly2);
             }
 
             @Override
@@ -73,6 +79,7 @@ public class TSP_GA3 extends JFrame {
         System.out.println("(Old/Pregnant/Children/Normal)");
         System.out.println("Please Enter Ur Identity: ");
         str = input.next();
+        input.close();
         int[] Old = {2,3,4,5,7,8,9,13,14,15,17,23,25,28,30,34};
         int[] Pregnant = {2,3,4,5,7,8,9,13,14,15,17,20,21,23,25,28,30,31,33,34};
         int[] Children = {5,7,9,10,12,13,14,15,23,30};
@@ -91,10 +98,10 @@ public class TSP_GA3 extends JFrame {
         }
 
         System.out.println(TourManager.getSize());
-        for(int k = 0; k < TourManager.getSize(); k++){
-            xPoly[k] = (int)(city[k].getX() * 8.25 - 20); //調整成符合圖像大小
-            yPoly[k] = (int)(city[k].getY() * 8.2 + 140); //調整成符合圖像大小
-        }
+        // for(int k = 0; k < TourManager.getSize(); k++){
+        //     xPoly[k] = (int)(city[k].getX() * 8.25 - 20); //調整成符合圖像大小
+        //     yPoly[k] = (int)(city[k].getY() * 8.2 + 140); //調整成符合圖像大小
+        // }
 
         // Initialize population
         Population pop = new Population(50, true);
@@ -102,7 +109,35 @@ public class TSP_GA3 extends JFrame {
         System.out.println("Distance: " + pop.getFittest().getDistance());
         System.out.println("Path: ");
         System.out.println(pop.getFittest());
-
+        System.out.println(pop.getFittest());
+        PrintWriter writer_before = new PrintWriter("result_before.txt", "UTF-8");
+        writer_before.println(pop.getFittest());
+        writer_before.close();
+        BufferedReader reader_before = new BufferedReader(new FileReader(("result_before.txt")));
+        // Read lines from file.
+        int m = 0;
+        String[] name_before = new String [100];
+        String[] x_before = new String [100];
+        String[] y_before = new String [100];
+        while (m!=TourManager.getSize()) {
+            String line_result_before = reader_before.readLine();
+            if (line_result_before == null) {
+                break;
+            } else if(line_result_before.contains("\n") || line_result_before.contains("\r\n")) {
+                break;
+            }
+            String[] value = line_result_before.split(",");
+            // System.out.println(l+":"+value.length);
+            name_before[m] = value[0];
+            x_before[m] = value[1];
+            y_before[m] = value[2];
+            m++;
+        }
+        reader_before.close();
+        for(int k = 0; k < TourManager.getSize(); k++){
+            xPoly[k] = (int)(Integer.parseInt(x_before[k] )* 8.25 - 20);
+            yPoly[k] = (int)(Integer.parseInt(y_before[k].substring(0, y_before[k].length() - 1))* 8.2 + 140);
+        }
         // Evolve population for 100 generations
         pop = GA.evolvePopulation(pop);
         for (int j = 0; j < 100; j++) {
@@ -114,7 +149,6 @@ public class TSP_GA3 extends JFrame {
         System.out.println("Final");
         System.out.println("Distance: " + pop.getFittest().getDistance());
         System.out.println("Path:");
-        // System.out.println(pop.getFittest());
         System.out.println(pop.getFittest());
         PrintWriter writer = new PrintWriter("result.txt", "UTF-8");
         writer.println(pop.getFittest());
@@ -140,6 +174,10 @@ public class TSP_GA3 extends JFrame {
             l++;
         }
         reader1.close();
+        for(int k = 0; k < TourManager.getSize(); k++){
+            x2Poly[k] = (int)(Integer.parseInt(x[k] )* 8.25 - 20);
+            y2Poly[k] = (int)(Integer.parseInt(y[k].substring(0, y[k].length() - 1))* 8.2 + 140);
+        }
         for(int k = 0;k<TourManager.getSize();k++){
             // System.out.print(name[k].substring(1));
             // System.out.print(x[k]);
