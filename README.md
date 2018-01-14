@@ -3,29 +3,30 @@ Project of Intelligence NCNU 1061
 
 ***
 
-## ³Ì·sª©¥»
+## æœ€æ–°ç‰ˆæœ¬
 ```
-Java³¡¤À(TSP_GA3.java)
+Javaéƒ¨åˆ†(TSP_GA3.java)
 ```
-### °õ¦æ
-* ¿é¤J¨­¤À (Old¦Ñ¤H/Pregnant¥¥°ü/Children¤p«Ä/Normal¤@¯ë¤H)
-* ¥ı«á¦L¥X
-    * Á`¦@¦³´X¶µ³]¬I
-    * ºtºâªk«eªºÁ`¸ô®|ªø
-    * ºtºâªk«eªº¸ô®|
-    * Evolution Finished(¤À¹j)
-    * ºtºâªk«áªºÁ`¸ô®|ªø
-    * ºtºâªk«áªº¸ô®|
-    * ¸ô®|+¦a¹Ï(GUI)
+### åŸ·è¡Œ
+* è¼¸å…¥èº«åˆ† (Oldè€äºº/Pregnantå­•å©¦/Childrenå°å­©/Normalä¸€èˆ¬äºº)
+* å…ˆå¾Œå°å‡º
+    * ç¸½å…±æœ‰å¹¾é …è¨­æ–½
+    * æ¼”ç®—æ³•å‰çš„ç¸½è·¯å¾‘é•·
+    * æ¼”ç®—æ³•å‰çš„è·¯å¾‘
+    * Evolution Finished(åˆ†éš”)
+    * æ¼”ç®—æ³•å¾Œçš„ç¸½è·¯å¾‘é•·
+    * æ¼”ç®—æ³•å¾Œçš„è·¯å¾‘
+    * è·¯å¾‘+åœ°åœ–(GUI)
 
-### ·s¼W¥\¯à
+### æ–°å¢åŠŸèƒ½
 * TourManager
-    * remove(¦]¬°¨­¤À­­¨î¡A²¾°£³¡¤À³]¬I)
-    * getSize(¨ú±o¥Ø«eªº³]¬I¼Æ¶q)
+    * remove(å› ç‚ºèº«åˆ†é™åˆ¶ï¼Œç§»é™¤éƒ¨åˆ†è¨­æ–½)
+    * getSize(å–å¾—ç›®å‰çš„è¨­æ–½æ•¸é‡)
 
 * TSP_GA:
-    * ÅªÀÉ(¤è«K·s¼W¸ê®Æ)
-    * GUI(µe¥X¸ô®|&¦a¹Ï§e²{)
+    * è®€æª”(æ–¹ä¾¿æ–°å¢è³‡æ–™)
+    * GUI(ç•«å‡ºè·¯å¾‘&åœ°åœ–å‘ˆç¾)
 
-## °Ñ¦Ò¨Ó·½:
+## åƒè€ƒä¾†æº:
 [the Project Spot](http://www.theprojectspot.com/tutorial-post/applying-a-genetic-algorithm-to-the-travelling-salesman-problem/5)
+[NCNU IM Intelligence Lab](https://intelligence.im.ncnu.edu.tw)
