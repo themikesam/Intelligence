@@ -1,14 +1,9 @@
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
 import java.io.*;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import java.util.Scanner;
 import java.awt.*;
-import java.awt.image.BufferedImage;
 import javax.swing.*;
-import java.awt.event.*;
 import javax.swing.SwingUtilities;
 
 public class TSP_GA3 extends JFrame {
@@ -31,7 +26,7 @@ public class TSP_GA3 extends JFrame {
                 try {
                     image = ImageIO.read(new File("lulu.jpg"));
                 } catch (IOException e) {
-                     e.printStackTrace();
+                    e.printStackTrace();
                 }
                 super.paintComponent(g);
                 g.drawImage(image, 0, 0, 800, 600, null);
@@ -98,8 +93,8 @@ public class TSP_GA3 extends JFrame {
 
         System.out.println(TourManager.getSize());
         for(int k = 0; k < TourManager.getSize(); k++){
-            xPoly[k] = (int)(city[k].getX() * 8.25 - 20);
-            yPoly[k] = (int)(city[k].getY() * 8.2 + 140);
+            xPoly[k] = (int)(city[k].getX() * 8.25 - 20); //調整成符合圖像大小
+            yPoly[k] = (int)(city[k].getY() * 8.2 + 140); //調整成符合圖像大小
         }
 
         // Initialize population
