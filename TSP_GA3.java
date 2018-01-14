@@ -98,17 +98,11 @@ public class TSP_GA3 extends JFrame {
         }
 
         System.out.println(TourManager.getSize());
-        // for(int k = 0; k < TourManager.getSize(); k++){
-        //     xPoly[k] = (int)(city[k].getX() * 8.25 - 20); //調整成符合圖像大小
-        //     yPoly[k] = (int)(city[k].getY() * 8.2 + 140); //調整成符合圖像大小
-        // }
 
         // Initialize population
         Population pop = new Population(50, true);
-        System.out.println("Initial:");
-        System.out.println("Distance: " + pop.getFittest().getDistance());
+        System.out.println("Initial\nDistance: " + pop.getFittest().getDistance());
         System.out.println("Path: ");
-        System.out.println(pop.getFittest());
         System.out.println(pop.getFittest());
         PrintWriter writer_before = new PrintWriter("result_before.txt", "UTF-8");
         writer_before.println(pop.getFittest());
@@ -127,7 +121,7 @@ public class TSP_GA3 extends JFrame {
                 break;
             }
             String[] value = line_result_before.split(",");
-            // System.out.println(l+":"+value.length);
+            // System.out.println(l+":"+value.length); //debug use
             name_before[m] = value[0];
             x_before[m] = value[1];
             y_before[m] = value[2];
