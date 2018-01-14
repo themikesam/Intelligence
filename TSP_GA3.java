@@ -65,7 +65,7 @@ public class TSP_GA3 extends JFrame {
         String str;
         Scanner input = new Scanner(System.in);
         // Open this file.
-        BufferedReader reader = new BufferedReader(new FileReader(("orginal_java.txt")));
+        BufferedReader reader = new BufferedReader(new FileReader(("original_java.txt")));
         // Read lines from file.
         City[] city = new City[34];
         int i = 0;
