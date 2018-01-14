@@ -72,7 +72,6 @@ public class TSP_GA2 {
             } else if(line.contains("\n") || line.contains("\r\n")) {
                 break;
             }
-            String[] parts = line.split(",");
             city[i] = new City(line);
             TourManager.addCity(city[i]);
             i++;
