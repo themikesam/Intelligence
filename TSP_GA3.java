@@ -53,7 +53,7 @@ public class TSP_GA3 extends JFrame {
         String str;
         Scanner input = new Scanner(System.in);
         // Open this file.
-        BufferedReader reader = new BufferedReader(new FileReader(("test.txt")));
+        BufferedReader reader = new BufferedReader(new FileReader(("test1.txt")));
         // Read lines from file.
         City[] city = new City[34];
         int i = 0;
@@ -92,8 +92,8 @@ public class TSP_GA3 extends JFrame {
 
         System.out.println(TourManager.getSize());
         for(int k = 0; k < TourManager.getSize(); k++){
-            xPoly[k] = (int)(city[k].getX() * 8.25 - 20);
-            yPoly[k] = (int)(city[k].getY() * 8.2 + 140);
+            xPoly[k] = (int)(city[k].getX() * 8.25 - 20); //調整成符合圖像大小
+            yPoly[k] = (int)(city[k].getY() * 8.2 + 140); //調整成符合圖像大小
         }
 
         // Initialize population
@@ -141,10 +141,10 @@ public class TSP_GA3 extends JFrame {
         }
         reader1.close();
         for(int k = 0;k<TourManager.getSize();k++){
-            System.out.print(name[k].substring(1));
-            System.out.print(x[k]);
-            System.out.print(y[k].substring(0, y[k].length() - 1));
-            System.out.println();
+            // System.out.print(name[k].substring(1));
+            // System.out.print(x[k]);
+            // System.out.print(y[k].substring(0, y[k].length() - 1));
+            // System.out.println();
         }
 
         SwingUtilities.invokeLater(new Runnable() {
