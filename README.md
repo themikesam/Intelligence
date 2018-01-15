@@ -1,18 +1,17 @@
 # Project of Intelligence NCNU 1061
-- [TSP是什麼？]
-    - [找到一個解決方案]
-- [程式碼]
-    - [City]
-    - [TourManager]
-    - [Tour]
-    - [Population]
-    - [GA]
-    - [TSP_GA3]
-    - [TSP_GA4]
-- [最新版本]
-    - [執行]
-    - [新增功能]
-- [參考來源]
+- [TSP是什麼？](https://github.com/themikesam/Intelligence#tsp%E6%98%AF%E4%BB%80%E9%BA%BC)
+    - [找到一個解決方案](https://github.com/themikesam/Intelligence#%E6%89%BE%E5%88%B0%E4%B8%80%E5%80%8B%E8%A7%A3%E6%B1%BA%E6%96%B9%E6%A1%88)
+- [程式碼](https://github.com/themikesam/Intelligence#%E7%A8%8B%E5%BC%8F%E7%A2%BC)
+    - [City](https://github.com/themikesam/Intelligence#cityjavaencode-the-cities)
+    - [TourManager](https://github.com/themikesam/Intelligence#tourmanagerjava-holds-all-of-our-destination-cities-for-our-tour)
+    - [Tour](https://github.com/themikesam/Intelligence#tourjavaencode-our-routes-these-are-generally-referred-to-as-tours-so-well-stick-to-the-convention)
+    - [Population](https://github.com/themikesam/Intelligence#populationjavahold-a-population-of-candidate-tours)
+    - [GA](https://github.com/themikesam/Intelligence#gajavahandle-the-working-of-the-genetic-algorithm-and-evolve-our-population-of-solutions)
+    - [TSP_GA3](https://github.com/themikesam/Intelligence#tsp_ga3javamain-method-add-our-cities-and-evolve-a-route-for-our-travelling-salesman-problem)
+- [最新版本](https://github.com/themikesam/Intelligence#%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC)
+    - [執行](https://github.com/themikesam/Intelligence#%E5%9F%B7%E8%A1%8C)
+    - [新增功能](https://github.com/themikesam/Intelligence#%E6%96%B0%E5%A2%9E%E5%8A%9F%E8%83%BD)
+- [參考來源](https://github.com/themikesam/Intelligence#%E5%8F%83%E8%80%83%E4%BE%86%E6%BA%90)
 
 
 
