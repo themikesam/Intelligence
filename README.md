@@ -59,7 +59,8 @@ Project of Intelligence NCNU 1061
 - 如果正確實施，最終結果應該是一個路線，其中包含父母所做的所有職位，沒有職位缺失或重復。
 
 
-## 在TSP問題的文獻中，由於地點通常被認為是城市，而路線被認為是旅遊，我們將在我們的代碼中採用標準的命名慣例。
+- 在TSP問題的文獻中，由於地點通常被認為是城市，而路線被認為是旅遊，我們將在我們的代碼中採用標準的命名慣例。
+# 程式碼
 
 ### City.java：encode the cities.
 - City()：// Constructs a randomly placed city
@@ -109,7 +110,7 @@ Project of Intelligence NCNU 1061
 
 ### TSP_GA3.java：main method, add our cities and evolve a route for our travelling salesman problem.
 
-## 最新版本
+# 最新版本
 ```
 Java部分(TSP_GA3.java)
 ```
