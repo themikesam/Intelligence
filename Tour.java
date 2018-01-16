@@ -1,4 +1,6 @@
-// 編譯路線(產生個體、Fitness)
+// 演算法前的準備
+// 編譯一條路線(個體)
+// 設每條路線的fitness
 // 計算座標距離
 import java.util.ArrayList;
 import java.util.Collections;

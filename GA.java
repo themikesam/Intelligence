@@ -1,3 +1,4 @@
+// 利用GA演化population
 public class GA {
 
     /* GA parameters */
