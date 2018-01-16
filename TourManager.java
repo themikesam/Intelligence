@@ -1,5 +1,7 @@
-// ±N§Ú­Ì©ñ¦bTSP_GA(¥Dµ{¦¡)ªº®y¼Ğ©ñ¶i¨Ó
-// ±±¨îCity®y¼Ğ¸ê°T
+/*
+* å°‡æˆ‘å€‘æ”¾åœ¨TSP_GA(ä¸»ç¨‹å¼)çš„åº§æ¨™æ”¾é€²ä¾†
+* æ§åˆ¶Cityåº§æ¨™è³‡è¨Š
+*/
 import java.util.ArrayList;
 
 public class TourManager {
