@@ -33,3 +33,11 @@ D:/Asus Notebook_20150926_backup/MetaYourHeuristic Practice/GA_Lib_TSP/GA_Lib_TS
 /Users/mikesam/Google Drive/Mike_Cloud(School)/NCNU/1061/計算智慧及規劃/Practice/1st Practice/GA_Lib_TSP/GA_Lib_TSP/GA_Lib/obj/Debug/GA_Lib_TSP.csproj.CoreCompileInputs.cache
 /Users/mikesam/Google Drive/Mike_Cloud(School)/NCNU/1061/計算智慧及規劃/Practice/1st Practice/GA_Lib_TSP/GA_Lib_TSP/GA_Lib/obj/Debug/GA_Lib.exe
 /Users/mikesam/Google Drive/Mike_Cloud(School)/NCNU/1061/計算智慧及規劃/Practice/1st Practice/GA_Lib_TSP/GA_Lib_TSP/GA_Lib/obj/Debug/GA_Lib.pdb
+/Users/mikesam/Google Drive/Mike_Cloud(School)/NCNU/1061/計算智慧及規劃/project/sol/GA_Lib_TSP/GA_Lib/bin/Debug/GA_Lib.exe.config
+/Users/mikesam/Google Drive/Mike_Cloud(School)/NCNU/1061/計算智慧及規劃/project/sol/GA_Lib_TSP/GA_Lib/bin/Debug/GA_Lib.exe
+/Users/mikesam/Google Drive/Mike_Cloud(School)/NCNU/1061/計算智慧及規劃/project/sol/GA_Lib_TSP/GA_Lib/bin/Debug/GA_Lib.pdb
+/Users/mikesam/Google Drive/Mike_Cloud(School)/NCNU/1061/計算智慧及規劃/project/sol/GA_Lib_TSP/GA_Lib/bin/Debug/Metaheuristic.dll
+/Users/mikesam/Google Drive/Mike_Cloud(School)/NCNU/1061/計算智慧及規劃/project/sol/GA_Lib_TSP/GA_Lib/obj/Debug/GA_Lib_TSP.csprojResolveAssemblyReference.cache
+/Users/mikesam/Google Drive/Mike_Cloud(School)/NCNU/1061/計算智慧及規劃/project/sol/GA_Lib_TSP/GA_Lib/obj/Debug/GA_Lib_TSP.csproj.CoreCompileInputs.cache
+/Users/mikesam/Google Drive/Mike_Cloud(School)/NCNU/1061/計算智慧及規劃/project/sol/GA_Lib_TSP/GA_Lib/obj/Debug/GA_Lib.exe
+/Users/mikesam/Google Drive/Mike_Cloud(School)/NCNU/1061/計算智慧及規劃/project/sol/GA_Lib_TSP/GA_Lib/obj/Debug/GA_Lib.pdb

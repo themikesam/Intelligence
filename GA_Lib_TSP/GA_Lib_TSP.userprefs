@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{97A1B567-9637-46A9-A71B-F11C438D2750}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="GA_Lib/GaTsp.cs">
     <Files>
-      <File FileName="GA_Lib/GaTsp.cs" Line="56" Column="28" />
+      <File FileName="GA_Lib/GaTsp.cs" Line="79" Column="10" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
