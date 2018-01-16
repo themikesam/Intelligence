@@ -1,5 +1,8 @@
-// ªì©l¤Æ°ò¥»®y¼Ğ
-// Models a city
+/*
+* åˆå§‹åŒ–åŸºæœ¬åæ¨™
+* Models a city
+*/
+
 import java.lang.*;
 
 public class City {
@@ -52,7 +55,7 @@ public class City {
         return distance;
     }
 
-    // ±N®y¼ĞÂà¦¨¦r¦ê
+    // ï¿½Nï¿½yï¿½ï¿½ï¿½à¦¨ï¿½rï¿½ï¿½
     @Override
     public String toString(){
         return getName() + "," + getX() + "," + getY();
