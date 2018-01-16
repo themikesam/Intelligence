@@ -1,10 +1,12 @@
-// §Q¥ÎTour²£¥Íªº­ÓÅé²Õ¦¨¸sÅé¡A¨Ã¿ï¥X³Ì¨Î¸ô½u
+/*
+* åˆ©ç”¨Tourç”¢ç”Ÿçš„å€‹é«”çµ„æˆç¾¤é«”ï¼Œä¸¦é¸å‡ºæœ€ä½³è·¯ç·š
+*/
 public class Population {
 
     // Holds population of tours
     Tour[] tours;
 
-    // Construct a population ²£¥Í¤@­Ó¸sÅé
+    // Construct a population ï¿½ï¿½ï¿½Í¤@ï¿½Ó¸sï¿½ï¿½
     public Population(int populationSize, boolean initialise) {
         tours = new Tour[populationSize];
         // If we need to initialise a population of tours do so
@@ -12,7 +14,7 @@ public class Population {
             // Loop and create individuals
             for (int i = 0; i < populationSize(); i++) {
                 Tour newTour = new Tour();
-                newTour.generateIndividual(); // Tour¸Ìªºfunction
+                newTour.generateIndividual(); // Tourï¿½Ìªï¿½function
                 saveTour(i, newTour);
             }
         }
@@ -28,7 +30,7 @@ public class Population {
         return tours[index];
     }
 
-    // Gets the best tour in the population ¿ï¥X³Ì¦nªº¸ô½u
+    // Gets the best tour in the population ï¿½ï¿½Xï¿½Ì¦nï¿½ï¿½ï¿½ï¿½u
     public Tour getFittest() {
         Tour fittest = tours[0];
         // Loop through individuals to find fittest
