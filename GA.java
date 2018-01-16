@@ -1,4 +1,7 @@
-// §Q¥ÎGAºt¤Æpopulation
+
+/*
+* åˆ©ç”¨GAæ¼”åŒ–population
+*/
 public class GA {
 
     /* GA parameters */
