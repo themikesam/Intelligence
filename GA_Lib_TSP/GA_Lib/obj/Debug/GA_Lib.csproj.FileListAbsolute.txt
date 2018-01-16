@@ -1,7 +1,0 @@
-c:\users\步進醫\documents\visual studio 2012\Projects\GA_Lib\GA_Lib\bin\Debug\GA_Lib.exe.config
-c:\users\步進醫\documents\visual studio 2012\Projects\GA_Lib\GA_Lib\obj\Debug\GA_Lib.csprojResolveAssemblyReference.cache
-c:\users\步進醫\documents\visual studio 2012\Projects\GA_Lib\GA_Lib\bin\Debug\GA_Lib.exe
-c:\users\步進醫\documents\visual studio 2012\Projects\GA_Lib\GA_Lib\bin\Debug\GA_Lib.pdb
-c:\users\步進醫\documents\visual studio 2012\Projects\GA_Lib\GA_Lib\bin\Debug\Metaheuristic.dll
-c:\users\步進醫\documents\visual studio 2012\Projects\GA_Lib\GA_Lib\obj\Debug\GA_Lib.exe
-c:\users\步進醫\documents\visual studio 2012\Projects\GA_Lib\GA_Lib\obj\Debug\GA_Lib.pdb
