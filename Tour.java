@@ -1,8 +1,9 @@
+// 編譯路線(產生個體、Fitness)
+// 計算座標距離
 import java.util.ArrayList;
 import java.util.Collections;
 
 public class Tour{
-
     // Holds our tour of cities
     private ArrayList tour = new ArrayList<City>();
     // Cache
@@ -10,17 +11,17 @@ public class Tour{
     private int distance = 0;
 
     // Constructs a blank tour
-    public Tour(){
+    public Tour() {
         for (int i = 0; i < TourManager.numberOfCities(); i++) {
             tour.add(null);
         }
     }
 
-    public Tour(ArrayList tour){
+    public Tour(ArrayList tour) {
         this.tour = tour;
     }
 
-    // Creates a random individual
+    // Creates a random individual 亂數產生個體
     public void generateIndividual() {
         // Loop through all our destination cities and add them to our tour
         for (int cityIndex = 0; cityIndex < TourManager.numberOfCities(); cityIndex++) {
@@ -43,7 +44,7 @@ public class Tour{
         distance = 0;
     }
 
-    // Gets the tours fitness
+    // Gets the tours fitness 取得路線的Fitness
     public double getFitness() {
         if (fitness == 0) {
             fitness = 1/(double)getDistance();
@@ -51,8 +52,8 @@ public class Tour{
         return fitness;
     }
 
-    // Gets the total distance of the tour
-    public int getDistance(){
+    // Gets the total distance of the tour 計算路線的總距離
+    public int getDistance() {
         if (distance == 0) {
             int tourDistance = 0;
             // Loop through our tour's cities
@@ -82,7 +83,7 @@ public class Tour{
         return tour.size();
     }
 
-    // Check if the tour contains a city
+    // Check if the tour contains a city 檢查路線是否包含這個座標
     public boolean containsCity(City city){
         return tour.contains(city);
     }

@@ -1,3 +1,5 @@
+// 將我們放在TSP_GA(主程式)的座標放進來
+// 控制City座標資訊
 import java.util.ArrayList;
 
 public class TourManager {

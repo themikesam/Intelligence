@@ -1,3 +1,5 @@
+// 初始化基本座標
+// Models a city
 import java.lang.*;
 
 public class City {
@@ -50,6 +52,7 @@ public class City {
         return distance;
     }
 
+    // 將座標轉成字串
     @Override
     public String toString(){
         return getName() + "," + getX() + "," + getY();
