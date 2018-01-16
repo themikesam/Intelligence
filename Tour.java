@@ -1,7 +1,9 @@
-// ºtºâªk«eªº·Ç³Æ
-// ½sÄ¶¤@±ø¸ô½u(­ÓÅé)
-// ³]¨C±ø¸ô½uªºfitness
-// ­pºâ®y¼Ğ¶ZÂ÷
+/*
+* æ¼”ç®—æ³•å‰çš„æº–å‚™
+* ç·¨è­¯ä¸€æ¢è·¯ç·š(å€‹é«”)
+* è¨­æ¯æ¢è·¯ç·šçš„fitness
+* è¨ˆç®—åº§æ¨™è·é›¢
+*/
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -23,7 +25,7 @@ public class Tour{
         this.tour = tour;
     }
 
-    // Creates a random individual ¶Ã¼Æ²£¥Í­ÓÅé
+    // Creates a random individual ï¿½Ã¼Æ²ï¿½ï¿½Í­ï¿½ï¿½ï¿½
     public void generateIndividual() {
         // Loop through all our destination cities and add them to our tour
         for (int cityIndex = 0; cityIndex < TourManager.numberOfCities(); cityIndex++) {
@@ -46,7 +48,7 @@ public class Tour{
         distance = 0;
     }
 
-    // Gets the tours fitness ¨ú±o¸ô½uªºFitness
+    // Gets the tours fitness ï¿½ï¿½ï¿½oï¿½ï¿½uï¿½ï¿½Fitness
     public double getFitness() {
         if (fitness == 0) {
             fitness = 1/(double)getDistance();
@@ -54,7 +56,7 @@ public class Tour{
         return fitness;
     }
 
-    // Gets the total distance of the tour ­pºâ¸ô½uªºÁ`¶ZÂ÷
+    // Gets the total distance of the tour ï¿½pï¿½ï¿½ï¿½uï¿½ï¿½ï¿½`ï¿½Zï¿½ï¿½
     public int getDistance() {
         if (distance == 0) {
             int tourDistance = 0;
@@ -85,7 +87,7 @@ public class Tour{
         return tour.size();
     }
 
-    // Check if the tour contains a city ÀË¬d¸ô½u¬O§_¥]§t³o­Ó®y¼Ğ
+    // Check if the tour contains a city ï¿½Ë¬dï¿½ï¿½uï¿½Oï¿½_ï¿½]ï¿½tï¿½oï¿½Ó®yï¿½ï¿½
     public boolean containsCity(City city){
         return tour.contains(city);
     }
