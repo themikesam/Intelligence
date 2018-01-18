@@ -50,12 +50,11 @@ public class City {
     public double distanceTo(City city){
         int xDistance = Math.abs(getX() - city.getX());
         int yDistance = Math.abs(getY() - city.getY());
-        double distance = Math.sqrt( (xDistance*xDistance) + (yDistance*yDistance) );
-
+        double distance = Math.sqrt( (xDistance*xDistance) + (yDistance*yDistance) ); // l2:direct
         return distance;
     }
 
-    // �N�y���ন�r��
+    /* �N�y���ন�r�� */
     @Override
     public String toString(){
         return getName() + "," + getX() + "," + getY();
